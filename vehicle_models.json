@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Short Range BEV",
+    "battery_capacity": 60.0,
+    "max_range_new": 109.0,
+    "charger_power": 6.0,
+    "v2g_capable": "true",
+    "dcfc_capable": "true"
+  }
+]

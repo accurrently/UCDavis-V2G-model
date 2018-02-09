@@ -1,0 +1,24 @@
+{
+  "units": {
+    "distance": "mi",
+    "power": "kW",
+    "energy": "kWh"
+  },
+  "minimum_iso_energy": 100.0,
+  "mean_commute_distance": 15.0,
+  "stdev_commute_distance": 5.0,
+  "stdev_driving_efficiency": 0.4,
+  "work_240V_penetration": 0.25,
+  "mean_work_240V_availability": 0.85,
+  "stdev_work_240V_availability": 0.15,
+  "work_120V_penetration": 0.25,
+  "mean_work_120V_availability": 0.85,
+  "stdev_work_120V_availability": 0.15,
+  "home_120v_charger_penetration": 0.90,
+  "home_240v_charger_penetration": 0.45,
+  "max_home_240v_power": 9.6,
+  "max_home_120v_power": 1.4,
+  "retail_rates": [
+    { "begin_hour": 0, "end_hour": 24, "price": 0.12 }
+  ]
+}
