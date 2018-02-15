@@ -1,24 +1,85 @@
 {
+  "report": {
+    "time_interval_min": 15
+  },
   "units": {
     "distance": "mi",
     "power": "kW",
     "energy": "kWh"
   },
-  "minimum_iso_energy": 100.0,
-  "mean_commute_distance": 15.0,
-  "stdev_commute_distance": 5.0,
-  "stdev_driving_efficiency": 0.4,
-  "work_240V_penetration": 0.25,
-  "mean_work_240V_availability": 0.85,
-  "stdev_work_240V_availability": 0.15,
-  "work_120V_penetration": 0.25,
-  "mean_work_120V_availability": 0.85,
-  "stdev_work_120V_availability": 0.15,
-  "home_120v_charger_penetration": 0.90,
-  "home_240v_charger_penetration": 0.45,
-  "max_home_240v_power": 9.6,
-  "max_home_120v_power": 1.4,
-  "retail_rates": [
-    { "begin_hour": 0, "end_hour": 24, "price": 0.12 }
-  ]
+  "trips": {
+    "commute": {
+      "mean_distance": 15.0,
+      "sd_distance": 5.0,
+      "mean_hwy_speed": 50,
+      "sd_hwy_speed": 10,
+      "mean_city_speed": 20,
+      "sd_city_speed": 5,
+      "mean_pct_hwy": 0.75,
+      "sd_pct_hwy": 0.1,
+      "mean_time_at": 7,
+      "sd_time_at": 1,
+      "mean_leave_time": "8:00",
+      "sd_leave_time": 30
+    },
+    "leisure": {
+      "mean_distance": 30.0,
+      "sd_distance": 10.0,
+      "mean_time_to": 1,
+      "sd_time_to": 0.25,
+      "mean_time_at": 3,
+      "sd_time_at": 1,
+      "mean_time_return": 1,
+      "sd_time_return": 0.25,
+      "mean_leave_time": "11:00",
+      "sd_leave_time": 10
+    }
+  },
+  "driver": {
+    "sd_driving_efficiency": 0.1,
+    "mean_leisure_propensity": 0.20,
+    "sd_leisure_propensity": 0.1,
+    "mean_range_anxiety": 0.3,
+    "sd_range_anxiety": 0.1,
+    "minimum_range_buffer": 15
+  },
+  "charging": {
+    "work": {
+      "240v_power": 7.7,
+      "240V_penetration": 0.25,
+      "mean_240V_availability": 0.85,
+      "stdev_240V_availability": 0.15,
+      "120v_power": 1.4,
+      "120V_penetration": 0.25,
+      "mean_120V_availability": 0.85,
+      "stdev_120V_availability": 0.15
+    },
+    "public": {
+      "240v_power": 7.7,
+      "240V_penetration": 0.15,
+      "mean_240V_availability": 0.60,
+      "stdev_240V_availability": 0.2,
+      "120v_power": 1.4,
+      "120V_penetration": 0.20,
+      "mean_120V_availability": 0.7,
+      "stdev_120V_availability": 0.15
+    },
+    "home": {
+      "240v_power": 9.6,
+      "240V_penetration": 0.45,
+      "mean_240V_availability": 1,
+      "stdev_240V_availability": 0,
+      "120v_power": 1.4,
+      "120V_penetration": 0.9,
+      "mean_120V_availability": 1,
+      "stdev_120V_availability": 0
+    }
+  },
+  "energy_market": {
+    "home_rates": [
+      { "begin_hour": 0, "end_hour": 24, "price": 0.12 }
+    ],
+    "minimum_iso_energy": 100.0
+  }
+
 }
