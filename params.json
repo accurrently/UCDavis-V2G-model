@@ -7,8 +7,8 @@
     "power": "kW",
     "energy": "kWh"
   },
-  "trips": {
-    "commute": {
+  "commutes": {
+    "work": {
       "mean_distance": 15.0,
       "sd_distance": 5.0,
       "mean_hwy_speed": 50,
@@ -20,7 +20,8 @@
       "mean_time_at": 7,
       "sd_time_at": 1,
       "mean_leave_time": "8:00",
-      "sd_leave_time": 30
+      "sd_leave_time": 30,
+      "sd_leave_delay": 10
     },
     "leisure": {
       "mean_distance": 30.0,
@@ -80,6 +81,11 @@
       { "begin_hour": 0, "end_hour": 24, "price": 0.12 }
     ],
     "minimum_iso_energy": 100.0
+  },
+  "battery": {
+    "annual_degradation_rate": 0.05,
+    "mean_v2g_soc_limit": 0.15,
+    "sd_v2g_soc_limit": 0.05
   }
 
 }
